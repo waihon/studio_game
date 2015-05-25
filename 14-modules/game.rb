@@ -1,6 +1,6 @@
 #####
 # Pragmatic Studio Ruby Programming
-# 13 - Modules
+# 14 - Modules
 # There are changes in this version:
 # 1. Require 'game_turn' instead of 'die'
 # 2. Call GameTurn's take_turn(player)
