@@ -1,7 +1,7 @@
 #####
 # Pragmatic Studio Ruby Programming
 # 15 - Blocks
-# The following are changes in this version:
+# This version has the following changes:
 # 1. Refactor method "play" as "play(rounds)"
 # 2. Add method "print_name_and_health(player)"
 # 3. Add method "print_status"

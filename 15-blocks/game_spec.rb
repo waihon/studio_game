@@ -2,7 +2,7 @@
 # Pragmatic Studio Ruby Programming
 # 15 - Blocks
 # This version has the following changes:
-# 1. Pass rounds argument to play(rounds)
+# 1. Pass rounds argument when calling play method.
 #####
 require_relative 'game'
 require_relative 'player'

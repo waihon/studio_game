@@ -2,7 +2,7 @@
 # Pragmatic Studio Ruby Programming
 # 15 - Blocks
 # This version has the following version:
-# 1. Add a new method "skip"
+# 1. Add a new method called "skip"
 # 2. Override <=> method to sort players by score in descending order.
 #####
 class Player
