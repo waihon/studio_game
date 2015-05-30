@@ -1,6 +1,6 @@
 #####
 # Pragmatic Studio Ruby Programming
-# 16 - Symbols and Structs
+# 17 - Hashes
 # This version has no changes.
 #####
 class Die
