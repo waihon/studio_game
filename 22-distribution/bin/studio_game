@@ -1,0 +1,38 @@
+#!/usr/bin/env ruby
+
+#####
+# Pragmatic Studio Ruby Programming
+# 22 - Distribution
+# This version has changes:
+# 1. Add as the first line: #!/usr/bin/env ruby
+# 2. Change path of require_relative to './../lib/games/class_name'.
+# 3. Prefix ClassName with Games::.
+#####
+require_relative './../lib/games/player'
+require_relative './../lib/games/game'
+require_relative './../lib/games/clumsy_player'
+require_relative './../lib/games/berserk_player'
+
+knuckleheads = Games::Game.new("Knuckleheads")
+knuckleheads.load_players(ARGV.shift || 'players.csv')
+
+klutz = Games::ClumsyPlayer.new("klutz", 105)
+knuckleheads.add_player(klutz)
+berserker = Games::BerserkPlayer.new("berseker", 50)
+knuckleheads.add_player(berserker)
+
+loop do
+  puts "\nHow many game rounds? ('quit' to exit)"
+  answer = gets.chomp.downcase
+  case answer
+  when /^\d+$/
+    knuckleheads.play(answer.to_i)
+  when 'quit', 'exit'
+    knuckleheads.print_stats
+    break
+  else
+    puts "Please enter a number or 'quit'"
+  end
+end
+
+knuckleheads.save_high_scores
